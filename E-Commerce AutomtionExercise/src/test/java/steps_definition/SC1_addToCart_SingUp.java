@@ -80,42 +80,7 @@ public class SC1_addToCart_SingUp extends SC1_addToCart_SingUpPage{
             }
         }
     }
-//    public void addToCart()
-//    {
-//        System.out.println("Waiting the presence of Google Ads to remove it if appear");
-////        Remove Google Ads
-//        try {
-//            js.executeScript(
-//                    "const waitForAds = setInterval(() => {" +
-//                            "  const elements = document.getElementsByClassName('adsbygoogle adsbygoogle-noablate');" +
-//                            "  if (elements.length > 0) {" +
-//                            "    clearInterval(waitForAds);" +
-//                            "    while (elements.length > 0) elements[0].remove();" +
-//                            "  }" +
-//                            "}, 50);"
-//            );
-//            System.out.println("Google Ads have been removed successfully!");
-//            signUp.top_Link().click();
-//        } catch (Exception e) {
-//            System.out.println("There is no Google Ads appear this time: " + e.getMessage());
-//        }
-//        finally {
-//            signUp.top_Link().click();
-//            signUp.addCart_1().click();
-//            signUp.continueShopping().click();
-//            signUp.productLink().click();
-//            // Get the current URL
-//            String currentUrl = Hooks.driver.getCurrentUrl();
-//            // Print current URL to console
-//            System.out.println("Current URL: " + currentUrl);
-//            // Assert on the current URL
-//            Assert.assertEquals(currentUrl, "https://automationexercise.com/products", "URL doesn't match");
-//            // Print information after the assertion
-//            System.out.println("Assertion passed! Current URL is: " + currentUrl);
-//            signUp.hoverCartBtn().click();
-//            signUp.addCart_1().click();
-//        }
-//    }
+
 
    @And("user click on view cart to proceed checkout")
            public WebElement viewCart() {
@@ -179,5 +144,9 @@ public class SC1_addToCart_SingUp extends SC1_addToCart_SingUpPage{
         // Print information after the assertion
         System.out.println("Assertion passed! The text 'Congratulations! Your order has been confirmed!' is displayed.");
    }
+        @Then("user logOut")
+    public void logout() {
+        signUp.logOut().click();
+    }
 }
 
