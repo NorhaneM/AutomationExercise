@@ -237,4 +237,11 @@ public class SC1_addToCart_SingUpPage extends driverActions.driverActions {
         Hooks.driver.findElement(download).click();
         System.out.println("File downloaded successfully");
     }
+     public WebElement logOut() {
+        By logoutLink = By.cssSelector("a[href='/logout']");
+        js.executeScript("window.scrollBy(0, 500);");
+        waitclickable(logoutLink);
+        WebElement logOut = Hooks.driver.findElement(logoutLink);
+        return logOut ;
+    }
 }
