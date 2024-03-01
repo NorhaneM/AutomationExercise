@@ -35,3 +35,6 @@
   2.  user signUp and register with Random test data
   3.  user signUp successfully with Random data "ACCOUNT CREATED!"
   4.  user logout from the website
+=============================================================================================================================
+2-Bug Report for Go Bus App
+3-Amazon SearchBox testCases
