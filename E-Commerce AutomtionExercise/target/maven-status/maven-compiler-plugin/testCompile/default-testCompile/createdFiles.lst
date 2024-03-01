@@ -1,0 +1,7 @@
+Pages\SC2_SingUp_randomDataPage.class
+steps_definition\SC2_SingUp_randomData.class
+Runner\testRunner.class
+steps_definition\SC1_addToCart_SingUp.class
+Pages\SC1_addToCart_SingUpPage.class
+driverActions\driverActions.class
+steps_definition\Hooks.class

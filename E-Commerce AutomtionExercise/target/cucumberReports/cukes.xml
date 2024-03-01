@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="61.574" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="SingUp | user should be able to add items to the cart and to sign up with new account" name="user should be able to add items and signUp" time="43.296">
+<system-out><![CDATA[
+Given user navigate to home page............................................passed
+When User add 2 items to the cart...........................................passed
+And user click on view cart to proceed checkout.............................passed
+And user add valid name and email to register...............................passed
+And user fill all his account details with "ACCOUNT CREATED!"...............passed
+When user navigate to the cart page and proceed to checkout.................passed
+And user add random data for payment and download the invoice...............passed
+]]></system-out>
+</testcase>
+<testcase classname="SingUp | user should be able to sign up new account with Random data" name="user should be able to signUp with Random data" time="17.976">
+<system-out><![CDATA[
+Given user navigate to URL home page........................................passed
+When user signUp and register with Random test data.........................passed
+Then user signUp successfully with Random data "ACCOUNT CREATED!"...........passed
+]]></system-out>
+</testcase>
+</testsuite>
