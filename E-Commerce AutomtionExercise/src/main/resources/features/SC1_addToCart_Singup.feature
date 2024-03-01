@@ -10,5 +10,5 @@ Feature: SingUp | user should be able to add items to the cart and to sign up wi
   And user fill all his account details with "ACCOUNT CREATED!"
   When user navigate to the cart page and proceed to checkout
   And user add random data for payment and download the invoice
-
+  Then user logOut
 
